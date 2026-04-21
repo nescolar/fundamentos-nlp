@@ -9,15 +9,15 @@
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
-      --bg:        #0a0a0f;
-      --surface:   #111118;
-      --border:    #1e1e2e;
-      --accent1:   #7b61ff;
-      --accent2:   #00d2c8;
-      --accent3:   #ff6b6b;
-      --text:      #e8e8f0;
-      --muted:     #6b6b88;
-      --card-bg:   #13131c;
+      --bg:        #ffffff;
+      --surface:   #f7f8fc;
+      --border:    #dde1ef;
+      --accent1:   #1a3a5c;
+      --accent2:   #2563a8;
+      --accent3:   #3b82c4;
+      --text:      #0f1e35;
+      --muted:     #5a6a80;
+      --card-bg:   #f4f6fb;
     }
 
     html { scroll-behavior: smooth; }
@@ -60,11 +60,11 @@
       filter: blur(120px);
       pointer-events: none;
       z-index: 1;
-      opacity: 0.12;
+      opacity: 0.55;
     }
-    .orb-1 { width: 500px; height: 500px; background: var(--accent1); top: -100px; left: -100px; animation: drift1 18s ease-in-out infinite alternate; }
-    .orb-2 { width: 400px; height: 400px; background: var(--accent2); bottom: -80px; right: -80px; animation: drift2 22s ease-in-out infinite alternate; }
-    .orb-3 { width: 300px; height: 300px; background: var(--accent3); top: 40%; left: 50%; animation: drift3 15s ease-in-out infinite alternate; }
+    .orb-1 { width: 500px; height: 500px; background: #c7d9f0; top: -100px; left: -100px; animation: drift1 18s ease-in-out infinite alternate; }
+    .orb-2 { width: 400px; height: 400px; background: #b8cfe8; bottom: -80px; right: -80px; animation: drift2 22s ease-in-out infinite alternate; }
+    .orb-3 { width: 300px; height: 300px; background: #d4e5f5; top: 40%; left: 50%; animation: drift3 15s ease-in-out infinite alternate; }
 
     @keyframes drift1 { to { transform: translate(60px, 80px); } }
     @keyframes drift2 { to { transform: translate(-50px, -60px); } }
@@ -186,7 +186,7 @@
     .card:hover {
       transform: translateY(-6px);
       border-color: var(--accent1);
-      box-shadow: 0 20px 60px rgba(123, 97, 255, 0.15);
+      box-shadow: 0 20px 60px rgba(26, 58, 92, 0.12);
     }
 
     .card.coming-soon {
@@ -208,9 +208,9 @@
     }
     .card:hover::before { transform: scaleX(1); }
 
-    .card-1 { --c1: #7b61ff; --c2: #00d2c8; }
-    .card-2 { --c1: #00d2c8; --c2: #7b61ff; }
-    .card-3 { --c1: #ff6b6b; --c2: #7b61ff; }
+    .card-1 { --c1: #1a3a5c; --c2: #2563a8; }
+    .card-2 { --c1: #2563a8; --c2: #3b82c4; }
+    .card-3 { --c1: #3b82c4; --c2: #1a3a5c; }
 
     /* Card number */
     .card-num {
@@ -339,7 +339,6 @@
       display: inline-block;
       width: 8px; height: 8px;
       background: var(--accent2);
-      border-radius: 50%;
       margin-left: 4px;
       animation: blink 1.2s step-end infinite;
       vertical-align: middle;
@@ -362,7 +361,7 @@
         <span>de NLP<span class="cursor"></span></span>
       </h1>
       <p class="subtitle">
-        Exploración práctica de los fundamentos del procesamiento de lenguaje natural.
+        Exploración práctica de los fundamrntos del procesamiento de lenguaje natural.
       </p>
     </header>
 
@@ -432,7 +431,7 @@
           próximamente con nuevos análisis y experimentos.
         </p>
         <div class="tags">
-          <span class="tag">por definir</span>
+          <span class="tag">Próximamente</span>
         </div>
       </div>
 
