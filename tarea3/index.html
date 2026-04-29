@@ -7863,13 +7863,25 @@ a.anchor-link {
 </div>
 </div>
 </div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=1b9c60f7">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="1.-Introducci%C3%B3n">1. Introducción<a class="anchor-link" href="#1.-Introducci%C3%B3n">¶</a></h2><p>Las redes neuronales artificiales son modelos computacionales inspirados, de manera simplificada, en el funcionamiento del cerebro humano. Así como las personas aprendemos a partir de la experiencia, asociando situaciones y ajustando nuestras decisiones con base en los resultados obtenidos, una red neuronal aprende identificando patrones en los datos. Estas redes están formadas por neuronas artificiales organizadas en capas que reciben información, la procesan y transmiten señales hasta producir una salida final. Durante este proceso, la red ajusta internamente sus conexiones, conocidas como pesos, para mejorar progresivamente sus predicciones. Un ejemplo cotidiano de este aprendizaje ocurre cuando una red aprende a diferenciar imágenes de perros y gatos después de analizar miles de ejemplos etiquetados.</p>
+<p>Para comprender de manera práctica cómo ocurre este aprendizaje, en este documento se trabajará con el problema XOR, un caso clásico en el estudio de redes neuronales. El objetivo consiste en que la red aprenda a identificar cuándo dos valores binarios son diferentes entre sí. Aunque el problema parece sencillo, resulta fundamental porque no puede resolverse correctamente con un modelo lineal simple, lo que demuestra la necesidad de utilizar redes con capas ocultas. A partir de este ejemplo se explicará el funcionamiento de una red neuronal de tres capas, el cálculo del error mediante una función de pérdida y el proceso de entrenamiento usando descenso por gradiente, técnica que ajusta los pesos de la red para minimizar el error de predicción. También se abordarán conceptos clave como la tasa de aprendizaje y el sesgo, elementos fundamentales para entender cómo las redes neuronales logran aprender desde los datos.</p>
+</div>
+</div>
+</div>
+</div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=b1eb8778">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="1.-Continuaci%C3%B3n-manual-del-ejemplo-XOR:-tercera-%C3%A9poca">1. Continuación manual del ejemplo XOR: tercera época<a class="anchor-link" href="#1.-Continuaci%C3%B3n-manual-del-ejemplo-XOR:-tercera-%C3%A9poca">¶</a></h2><p>En el documento guía, <em><strong>"Training a Neural Network by Hand: the XOR problem"</strong></em> LLinás Solano (2026) desarrolla un ejemplo paso a paso del problema XOR para una red neuronal con una capa oculta. Se realiza el ejercicio para dos épocas completas de propagación forward, se obtienen los resultados, y se continúa con la propagación en la dirección opuesta, conocida como backward, para la observación $(x_1, x_2) = (0, 1)$ con salida deseada $y = 1$.</p>
+<h2 id="2.-Continuaci%C3%B3n-manual-del-ejemplo-XOR:-tercera-%C3%A9poca">2. Continuación manual del ejemplo XOR: tercera época<a class="anchor-link" href="#2.-Continuaci%C3%B3n-manual-del-ejemplo-XOR:-tercera-%C3%A9poca">¶</a></h2><p>En el documento guía, <em><strong>"Training a Neural Network by Hand: the XOR problem"</strong></em> LLinás Solano (2026) desarrolla un ejemplo paso a paso del problema XOR para una red neuronal con una capa oculta. Se realiza el ejercicio para dos épocas completas de propagación forward, se obtienen los resultados, y se continúa con la propagación en la dirección opuesta, conocida como backward, para la observación $(x_1, x_2) = (0, 1)$ con salida deseada $y = 1$.</p>
 <p>La red tiene la arquitectura:</p>
 <ul>
 <li>Capa de entrada: 2 neuronas.</li>
@@ -8556,7 +8568,7 @@ error y acerca la predicción al valor deseado.</p>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="2.-Entrenamiento-automatizado:-20-%C3%A9pocas">2. Entrenamiento automatizado: 20 épocas<a class="anchor-link" href="#2.-Entrenamiento-automatizado:-20-%C3%A9pocas">¶</a></h2><p>A continuación se automatiza el ciclo completo de forward, cálculo de pérdida, backpropagation y actualización de parámetros para 20 épocas. No se emplea ninguna biblioteca de redes neuronales ni diferenciación automática; todos los gradientes se calculan de forma explícita.</p>
+<h2 id="2.1-Entrenamiento-automatizado:-20-%C3%A9pocas">2.1 Entrenamiento automatizado: 20 épocas<a class="anchor-link" href="#2.1-Entrenamiento-automatizado:-20-%C3%A9pocas">¶</a></h2><p>A continuación se automatiza el ciclo completo de forward, cálculo de pérdida, backpropagation y actualización de parámetros para 20 épocas. No se emplea ninguna biblioteca de redes neuronales ni diferenciación automática; todos los gradientes se calculan de forma explícita.</p>
 </div>
 </div>
 </div>
